@@ -1,12 +1,14 @@
+var templateLoader = require('./template_loader');
+
 module.exports = {
     // Extend website resources and html
     website: {
         assets: "./book",
         js: [
-            "test.js"
+            "main.js"
         ],
         css: [
-            "test.css"
+            "main.css"
         ],
         html: {
             "html:start": function() {
@@ -19,32 +21,7 @@ module.exports = {
             "head:start": "<!-- head:start -->",
             "head:end": "<!-- head:end -->",
 
-            "body:start": "<!-- body:start -->",
-            "body:end": "<!-- body:end -->"
-        }
-    },
-
-    // Extend ebook resources and html
-    website: {
-        assets: "./book",
-        js: [
-            "test.js"
-        ],
-        css: [
-            "test.css"
-        ],
-        html: {
-            "html:start": function() {
-                return "<!-- Start book "+this.options.title+" -->"
-            },
-            "html:end": function() {
-                return "<!-- End of book "+this.options.title+" -->"
-            },
-
-            "head:start": "<!-- head:start -->",
-            "head:end": "<!-- head:end -->",
-
-            "body:start": "<!-- body:start -->",
+            "body:start": templateLoader.fromPathSync('./templates/navbar.hbs')(),
             "body:end": "<!-- body:end -->"
         }
     },

@@ -1,0 +1,37 @@
+.navbar {
+  position: fixed;
+  padding: 0 10px;
+  z-index: 999;
+  background-color: rgba(8, 8, 8, 0.8);
+  height: 50px;
+  width: 100%;
+}
+
+.navbar h1 {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 24px;
+  color: #eaeaea;
+}
+
+.navbar img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.navbar span {
+  vertical-align: middle;
+}
+
+.book .book-summary {
+  top: 50px;
+}
+
+.book .book-body {
+  top: 50px;
+}
+
+.book .book-header .btn.sharing-link {
+  display: none;
+}

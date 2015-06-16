@@ -1,18 +1,21 @@
 {
-    "name": "gitbook-plugin",
-    "description": "Sample plugin for GitBook",
+    "name": "gitbook-plugin-terminus",
+    "description": "Terminus.io official plugin for Gitbook",
     "main": "index.js",
     "version": "0.0.2",
     "engines": {
         "gitbook": "*"
     },
-    "homepage": "https://github.com/GitbookIO/plugin",
+    "homepage": "https://github.com/TerminusHQ/gitbook-plugin-terminus",
     "repository": {
         "type": "git",
-        "url": "https://github.com/GitbookIO/plugin.git"
+        "url": "git@github.com:TerminusHQ/gitbook-plugin-terminus.git"
     },
     "license": "Apache 2",
     "bugs": {
-        "url": "https://github.com/GitbookIO/plugin/issues"
+        "url": "https://github.com/TerminusHQ/gitbook-plugin-terminus/issues"
+    },
+    "dependencies": {
+      "handlebars": "~3"
     }
 }
