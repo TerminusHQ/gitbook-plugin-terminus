@@ -1,5 +1,3 @@
-var templateLoader = require('./template_loader');
-
 module.exports = {
     // Extend website resources and html
     website: {
@@ -21,7 +19,7 @@ module.exports = {
             "head:start": "<!-- head:start -->",
             "head:end": "<!-- head:end -->",
 
-            "body:start": templateLoader.fromPathSync('./templates/navbar.hbs')(),
+            // "body:start": templateLoader.fromPathSync('./templates/navbar.hbs')(),
             "body:end": "<!-- body:end -->"
         }
     },
@@ -50,12 +48,12 @@ module.exports = {
 
         // This is called before the book is generated
         "init": function() {
-            console.log("init!");
+          // do something
         },
 
         // This is called after the book generation
         "finish": function() {
-            console.log("finish!");
+          // do something
         }
     }
 };
